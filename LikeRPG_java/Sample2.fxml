@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: #f0f8ff#f0f8ff;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+   <children>
+      <AnchorPane layoutX="336.0" layoutY="263.0" prefHeight="223.0" prefWidth="250.0" style="-fx-background-color: #D3D3D3#D3D3D3 #D3D3D3#D3D3D3;">
+         <children>
+            <Button fx:id="Button_Up" layoutX="90.0" layoutY="21.0" mnemonicParsing="false" onAction="#Button_Up" prefHeight="70.0" prefWidth="70.0" rotate="45.0" style="-fx-background-color: #f08080#f08080;" AnchorPane.rightAnchor="90.0">
+               <font>
+                  <Font size="6.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="65.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true" rotate="-45.0">
+                     <image>
+                        <Image url="@image/Button_Fight.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="Button_Down" layoutX="90.0" layoutY="134.0" mnemonicParsing="false" onAction="#Button_Down" prefHeight="70.0" prefWidth="70.0" rotate="45.0" style="-fx-background-color: #f08080#f08080;">
+               <font>
+                  <Font size="6.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="65.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true" rotate="-45.0">
+                     <image>
+                        <Image url="@image/Button_Run.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="Button_Right" layoutX="152.0" layoutY="77.0" mnemonicParsing="false" onAction="#Button_Right" prefHeight="70.0" prefWidth="70.0" rotate="45.0" style="-fx-background-color: #f08080#f08080;">
+               <font>
+                  <Font size="6.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="65.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true" rotate="-45.0">
+                     <image>
+                        <Image url="@image/Button_Item.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="Button_Left" layoutX="28.0" layoutY="77.0" mnemonicParsing="false" onAction="#Button_Left" prefHeight="70.0" prefWidth="70.0" rotate="45.0" style="-fx-background-color: #f08080#f08080;">
+               <font>
+                  <Font size="6.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="65.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true" rotate="-45.0">
+                     <image>
+                        <Image url="@image/Button_Sleep.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Button fx:id="Endbutton" layoutX="14.0" layoutY="423.0" mnemonicParsing="false" onAction="#Switchto1" prefHeight="60.0" prefWidth="307.0" text="フィールドに戻る" textFill="WHITE">
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <AnchorPane layoutX="14.0" layoutY="263.0" prefHeight="155.0" prefWidth="307.0" style="-fx-background-color: #D3D3D3#D3D3D3 #D3D3D3#D3D3D3;">
+         <children>
+            <Label fx:id="EventLavel" alignment="CENTER" prefHeight="155.0" prefWidth="307.0" textAlignment="CENTER" textFill="#6b6b6b" />
+         </children></AnchorPane>
+      <Separator layoutX="4.0" layoutY="235.0" prefHeight="15.0" prefWidth="593.0" />
+      <AnchorPane prefHeight="240.0" prefWidth="600.0" style="-fx-background-color: #f0f8ff#f0f8ff;">
+         <children>
+            <ImageView fx:id="Enemy_field" fitHeight="240.0" fitWidth="400.0" layoutX="100.0" pickOnBounds="true" preserveRatio="true" />
+         </children></AnchorPane>
+   </children>
+</AnchorPane>
